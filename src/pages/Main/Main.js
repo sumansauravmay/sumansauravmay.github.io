@@ -7,7 +7,7 @@ import {
   Landing,
   About,
   Skills,
-  Testimonials,
+  // Testimonials,
   // Blog,
   Education,
   //  Experience,
@@ -17,7 +17,7 @@ import {
   // Achievement,
 } from "../../components";
 
-// import GithubCal from "../../components/GithubCalender/githubCal";
+import GithubCal from "../../components/GithubCalender/githubCal";
 // import { headerData } from "../../data/headerData";
 
 function Main() {
@@ -35,10 +35,14 @@ function Main() {
       {/* <Experience /> */}
       <Projects />
       {/* <Achievement /> */}
-      <Testimonials />
+      {/* <Testimonials /> */}
+      {/* <Blog/> */}
+
       <Services />
+      
+      <GithubCal />
       <Contacts />
-      {/* <GithubCal /> */}
+      
       <Footer />
     </div>
   );

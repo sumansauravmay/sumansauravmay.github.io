@@ -1,7 +1,7 @@
-import one from "../assets/svg/projects/one.svg";
-import two from "../assets/svg/projects/two.svg";
-import three from "../assets/svg/projects/three.svg";
-import four from "../assets/svg/projects/four.svg";
+// import one from "../assets/svg/projects/one.svg";
+// import two from "../assets/svg/projects/two.svg";
+// import three from "../assets/svg/projects/three.svg";
+// import four from "../assets/svg/projects/four.svg";
 // import five from "../assets/svg/projects/five.svg";
 // import six from "../assets/svg/projects/six.svg";
 // import seven from "../assets/svg/projects/seven.svg";
@@ -16,7 +16,8 @@ export const projectsData = [
     tags: ["HTML", "CSS", "JavaScript", "React"],
     code: "https://github.com/sumansauravmay/alive-run-138/tree/main/kfctwo",
     demo: "https://kfctwo-sumansauravmay.vercel.app/",
-    image: one,
+    // image: one,
+    image: "https://thumbs.dreamstime.com/b/kfc-logo-kentucky-fried-chicken-global-fast-food-chain-sign-font-shop-60145767.jpg",
   },
   {
     id: 2,
@@ -26,7 +27,8 @@ export const projectsData = [
     tags: ["HTML", "CSS", "JavaScript"],
     code: "https://github.com/omesh96/safe-bridge-5506",
     demo: "https://startling-youtiao-e9d129.netlify.app/",
-    image: two,
+    // image: two,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzxSKPVmgftrKN6i4UnD8Cg-UrupTp-0z52R6WlOeOp97dE-CA2usK8jAx2pGwoBCvXg&usqp=CAU",
   },
   {
     id: 3,
@@ -36,7 +38,8 @@ export const projectsData = [
     tags: ["HTML", "CSS", "JavaScript"],
     code: "https://github.com/rohit1620/Mixed_plan_5913",
     demo: "https://github.com/rohit1620/Mixed_plan_5913",
-    image: three,
+    // image: three,
+    image:"https://media.istockphoto.com/id/1255328634/photo/cricket-leather-ball-resting-on-bat-on-the-stadium-pitch.jpg?s=612x612&w=0&k=20&c=e2yHkZt3DISv6e1dpkZgABgC9fxfY93cB1H4MdY9sJs="
   },
   // {
   //   id: 4,
