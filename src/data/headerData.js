@@ -4,7 +4,7 @@ export const headerData = {
   name: "Suman Saurav",
   title: "Full Stack Web Developer",
   desciption:
-    "I am a Full Stack Web Developer. I have created many Projects at Masai School during construct week, Like E-Commerce Website. I also worked as a team lead in Projects.",
+    "I am a Full Stack Web Developer. I have created many Projects at Masai School during construct week, Like E-Commerce Website. I also worked as a front-end developer at AVRL within one year.",
   image:
     "https://avatars.githubusercontent.com/u/101393663?v=4",
   resumePdf: resume,

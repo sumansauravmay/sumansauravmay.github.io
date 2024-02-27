@@ -22,10 +22,12 @@ function Experience() {
                         <ExperienceCard 
                             key={exp.id}
                             id={exp.id}
-                            jobtitle={exp.jobtitle}
                             company={exp.company}
+                            jobtitle={exp.jobtitle}
                             startYear={exp.startYear}
-                            endYear={exp.endYear}/>
+                            endYear={exp.endYear}
+                            location={exp.location}
+                            />
                     ))}
                  </div>
              </div>

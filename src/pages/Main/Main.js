@@ -10,7 +10,7 @@ import {
   // Testimonials,
   // Blog,
   Education,
-  //  Experience,
+   Experience,
   Contacts,
   Projects,
   Services,
@@ -32,7 +32,7 @@ function Main() {
       <About />
       <Education />
       <Skills />
-      {/* <Experience /> */}
+      <Experience />
       <Projects />
       {/* <Achievement /> */}
       {/* <Testimonials /> */}
