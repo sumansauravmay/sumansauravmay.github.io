@@ -10,6 +10,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CloseIcon from "@material-ui/icons/Close";
 
+import { RxBookmarkFilled } from "react-icons/rx";
+
 import "./Navbar.css";
 import { headerData } from "../../data/headerData";
 import { ThemeContext } from "../../contexts/ThemeContext";
@@ -192,6 +194,17 @@ function Navbar() {
                 </div>
               </NavLink>
             </Fade>
+
+            <Fade left>
+              <NavLink to="/#experience" smooth={true} spy="true" duration={2000}>
+                <div className={classes.drawerItem}>
+                  <RxBookmarkFilled className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Experience</span>
+                </div>
+              </NavLink>
+            </Fade>
+
+
 
             <Fade left>
               <NavLink to="/#resume" smooth={true} spy="true" duration={2000}>
