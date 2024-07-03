@@ -4,7 +4,7 @@ export const educationData = [
     institution: "Masai School, Bengaluru",
     course: "MERN Stack",
     startYear: "March 2022",
-    endYear: "Present",
+    endYear: "February 2023",
   },
   {
     id: 2,

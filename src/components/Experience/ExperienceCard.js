@@ -36,7 +36,7 @@ function ExperienceCard({id, company, jobtitle, startYear, endYear, location, de
                     <h5 style={{color: theme.tertiary}}>{company}</h5>
                     <h4 style={{color: theme.tertiary}}>{location}</h4>
                     <h4 style={{color: theme.tertiary}}>{jobtitle}</h4>
-                    <h4 style={{color: theme.tertiary}}>{description}</h4>
+                    <p style={{color: theme.tertiary, fontSize:"20px"}}>{description}</p>
                     
                 </div>
             </div>
