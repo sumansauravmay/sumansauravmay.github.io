@@ -115,7 +115,6 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { FaPlay, FaCode } from "react-icons/fa";
 import Fade from "react-reveal/Fade";
-import { Link } from "react-router-dom";
 import placeholder from "../../../assets/png/placeholder.png";
 import "./SingleProject.css";
 

@@ -6,15 +6,17 @@ export const experienceData = [
         startYear: 'May 2023',
         endYear: 'March 2024',
         location: 'Austin, Texas, USA',
-        description: 'AVRL is an automation company designed for transportation and logistics organizations. I Collaborated with 15+ engineers to build the Cachet (the company’s in-house software) using HTML, CSS, JavaScript, ReactJS, Redux, Tailwind CSS, NodeJS, ExpressJS. Cachet is a customizable automation platform designed for the transportation and logistics industries. It allows clients to implement and modify their own logic independently, enhancing flexibility and efficiency in their operations without requiring extensive technical knowledge. As a front-end developer, I designed and developed an intuitive and responsive dashboard for the Cachet platform, enabling users to monitor and manage their logistics operations efficiently.'
+        description: 'Collaborated with 30+ engineers, designers, product managers, and senior leadership to develop web-based automation solutions and the cachet (the company’s in-house software) using HTML, CSS, JavaScript, React JS, and Redux. It enables the client to add or modify their logic on their own through the cachet system by taking all input.'
     },
-    // {
-    //     id: 2,
-    //     company: 'Vehement Capital Partners',
-    //     jobtitle: 'Backend Developer',
-    //     startYear: '2019',
-    //     endYear: '2020'
-    // },
+    {
+        id: 2,
+        company: 'Masai School',
+        jobtitle: 'Full Stack Web Developer Trainee',
+        startYear: 'March 2022',
+        endYear: 'February 2023',
+        location: 'Bengaluru, Karnataka, India',
+        description: 'Completed 2 individual projects and 3 collaborative projects, showcasing proficiency in the MERN stack. Applied industry best practices in frontend and backend development, optimizing code efficiency.'
+    },
     // {
     //     id: 3,
     //     company: 'Wonka Industries',

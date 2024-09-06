@@ -1,10 +1,10 @@
 export const educationData = [
   {
     id: 1,
-    institution: "Masai School, Bengaluru",
-    course: "MERN Stack",
-    startYear: "March 2022",
-    endYear: "February 2023",
+    institution: "Patel College Of Science & Technology, Bhopal",
+    course: "Master Of Computor Application(MCA)",
+    startYear: "September 2023",
+    endYear: "Present",
   },
   {
     id: 2,
