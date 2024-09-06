@@ -268,21 +268,20 @@ function Contacts() {
           </div>
 
           <div className="contacts-details">
-            <a
-              href={`mailto:${contactsData.email}`}
+            <div
               className="personal-details"
             >
               <div className={classes.detailsIcon}>
                 <FiAtSign />
               </div>
               <p style={{ color: theme.tertiary,fontSize:"14px" }}>{contactsData.email}</p>
-            </a>
-            <a href={`tel:${contactsData.phone}`} className="personal-details">
+            </div>
+            <div className="personal-details">
               <div className={classes.detailsIcon}>
                 <FiPhone />
               </div>
               <p style={{ color: theme.tertiary,fontSize:"14px" }}>{contactsData.phone}</p>
-            </a>
+            </div>
             <div className="personal-details">
               <div className={classes.detailsIcon}>
                 <HiOutlineLocationMarker />
