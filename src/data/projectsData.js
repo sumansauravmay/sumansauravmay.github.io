@@ -15,17 +15,17 @@ export const projectsData = [
     id: 1,
     projectName: "DriftMart",
     projectDesc:
-      "A fully functional e-commerce platform built with React, Tailwind CSS, and Redux for state management. Features include reusable components, efficient state management, and responsive design.",
-    tags: ["HTML", "CSS", "JavaScript","React","Redux","Tailwind CSS"],
+      "A fully functional e-commerce platform includes reusable components, efficient state management, and responsive design.",
+    tags: ["JavaScript","React","Redux","Tailwind CSS"],
     code: "https://github.com/sumansauravmay/DriftMart",
     demo: "https://symphonious-lollipop-6048de.netlify.app/",
-    image: "https://i.postimg.cc/pXdVBBMx/e-commerce.jpg",
+    image: "https://i.postimg.cc/wvQ9xV3G/Drift-Mart-logo.png",
   },
   {
     id: 2,
     projectName: "RelianceDigital-Clone",
     projectDesc:
-      "Reliance Digital is an Indian consumer electronics retailer.",
+      "An Indian consumer electronics retailer includes reusable components, efficient state management, and responsive design.",
     tags: ["HTML", "CSS", "JavaScript","React","Redux","ChakraUI"],
     code: "https://github.com/Sonia-saini/-accidental-visitor-9960",
     demo: "https://melodic-syrniki-172917.netlify.app/",
