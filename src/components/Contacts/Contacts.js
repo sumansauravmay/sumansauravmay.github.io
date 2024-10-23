@@ -1,8 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Snackbar, IconButton, SnackbarContent } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
-import axios from "axios";
-import isEmail from "validator/lib/isEmail";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   FaTwitter,
@@ -26,13 +24,10 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 import { socialsData } from "./socialsData";
 import { contactsData } from "./contactsData";
 import "./Contacts.css";
+import emailjs from "emailjs-com";
 
 function Contacts() {
   const [open, setOpen] = useState(false);
-
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
 
   const [success, setSuccess] = useState(false);
   const [errMsg, setErrMsg] = useState("");
@@ -129,35 +124,46 @@ function Contacts() {
 
   const classes = useStyles();
 
-  const handleContactForm = (e) => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    if (name && email && message) {
-      if (isEmail(email)) {
-        const responseData = {
-          name: name,
-          email: email,
-          message: message,
-        };
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+    };
 
-        axios.post(contactsData.sheetAPI, responseData).then((res) => {
-          console.log("success");
+    emailjs
+      .send(
+        "service_mql82ti",
+        "template_237jcmp",
+        templateParams,
+        "MAJlNjTxJMQ-uTazZ"
+      )
+      .then(
+        (result) => {
+          console.log("Email successfully sent!", result.text);
           setSuccess(true);
           setErrMsg("");
-
-          setName("");
-          setEmail("");
-          setMessage("");
-          setOpen(false);
-        });
-      } else {
-        setErrMsg("Invalid email");
-        setOpen(true);
-      }
-    } else {
-      setErrMsg("Enter all the fields");
-      setOpen(true);
-    }
+          setOpen(true);
+        },
+        (error) => {
+          console.log("Failed to send email.", error.text);
+          setErrMsg("Failed to send email.");
+          setOpen(true);
+        }
+      );
   };
 
   return (
@@ -170,17 +176,20 @@ function Contacts() {
         <h1 style={{ color: theme.primary }}>Contacts</h1>
         <div className="contacts-body">
           <div className="contacts-form">
-            <form onSubmit={handleContactForm}>
+            <form
+              // onSubmit={handleContactForm}
+              onSubmit={sendEmail}
+            >
               <div className="input-container">
                 <label htmlFor="Name" className={classes.label}>
                   Name
                 </label>
                 <input
                   placeholder="Your Name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  value={formData.name}
+                  onChange={handleChange}
                   type="text"
-                  name="Name"
+                  name="name"
                   className={`form-input ${classes.input}`}
                 />
               </div>
@@ -190,10 +199,10 @@ function Contacts() {
                 </label>
                 <input
                   placeholder="your@email.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  value={formData.email}
+                  onChange={handleChange}
                   type="email"
-                  name="Email"
+                  name="email"
                   className={`form-input ${classes.input}`}
                 />
               </div>
@@ -203,10 +212,10 @@ function Contacts() {
                 </label>
                 <textarea
                   placeholder="Fell free to Type your message...."
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
+                  value={formData.message}
+                  onChange={handleChange}
                   type="text"
-                  name="Message"
+                  name="message"
                   className={`form-message ${classes.message}`}
                 />
               </div>
@@ -268,25 +277,29 @@ function Contacts() {
           </div>
 
           <div className="contacts-details">
-            <div
-              className="personal-details"
-            >
+            <div className="personal-details">
               <div className={classes.detailsIcon}>
                 <FiAtSign />
               </div>
-              <p style={{ color: theme.tertiary,fontSize:"14px" }}>{contactsData.email}</p>
+              <p style={{ color: theme.tertiary, fontSize: "14px" }}>
+                {contactsData.email}
+              </p>
             </div>
             <div className="personal-details">
               <div className={classes.detailsIcon}>
                 <FiPhone />
               </div>
-              <p style={{ color: theme.tertiary,fontSize:"14px" }}>{contactsData.phone}</p>
+              <p style={{ color: theme.tertiary, fontSize: "14px" }}>
+                {contactsData.phone}
+              </p>
             </div>
             <div className="personal-details">
               <div className={classes.detailsIcon}>
                 <HiOutlineLocationMarker />
               </div>
-              <p style={{ color: theme.tertiary,fontSize:"14px" }}>{contactsData.address}</p>
+              <p style={{ color: theme.tertiary, fontSize: "14px" }}>
+                {contactsData.address}
+              </p>
             </div>
 
             <div className="socialmedia-icons">
