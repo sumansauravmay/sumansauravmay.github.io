@@ -22,11 +22,6 @@ export const skillsData = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
   },
   {
-    skill: "React-Flow",
-    image:
-      "https://i.postimg.cc/dtjC6rJj/flow.jpg",
-  },
-  {
     skill: "Redux",
     image: "https://www.svgrepo.com/show/303557/redux-logo.svg",
   },
@@ -72,12 +67,20 @@ export const skillsData = [
     image: "https://i.postimg.cc/NMkCBL18/mongo.jpg",
   },
   {
+    skill: "MySQL",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGGT_pnMHJdps9fGjcDaFSqcfFxO2E7BQk4g&s",
+  },
+  {
     skill: "Git",
     image: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
   },
   {
     skill: "Github",
     image: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+  },
+  {
+    skill: "AWS",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2xQcwKitRgXfqdi34DYlocPSEXD2G2zZipg&s",
   },
 
 ];

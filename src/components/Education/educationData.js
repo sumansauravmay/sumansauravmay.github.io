@@ -1,7 +1,7 @@
 export const educationData = [
   {
     id: 1,
-    institution: "Patel College Of Science & Technology, Bhopal",
+    institution: "RGPV, Bhopal",
     course: "Master Of Computor Application(MCA)",
     startYear: "September 2023",
     endYear: "Present",

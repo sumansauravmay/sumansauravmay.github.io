@@ -1,6 +1,16 @@
 export const experienceData = [
   {
     id: 1,
+    company: "Areness",
+    jobtitle: "Software Developer",
+    startYear: "January 2020",
+    endYear: "March 2022",
+    location: "Gurgaon, India: On-site",
+    description:
+      "Built and maintained a Real Estate Valuation and Online Dispute Resolution software with React.js, Node.js, and MongoDB for efficient data management. Implemented Secure API Integrations using Node.js and Express, ensuring robust authentication and data protection with JWT and bcrypt.",
+  },
+  {
+    id: 2,
     company: "Advanced Voice Research Labs",
     jobtitle: "Software Development Engineer-1",
     startYear: "May 2023",
@@ -10,14 +20,14 @@ export const experienceData = [
       "Collaborated with 30+ engineers, designers, product managers, and senior leadership to develop web-based automation solutions and the cachet (the company’s in-house software) using HTML, CSS, JavaScript, React JS, and Redux",
   },
   {
-    id: 2,
-    company: "Nexacode soft solution",
+    id: 3,
+    company: "Xapotech Systems (P) Ltd.",
     jobtitle: "Frontend Developer",
     startYear: "January 2020",
-    endYear: "February 2022",
-    location: "India: Remote",
+    endYear: "March 2022",
+    location: "Noida, India: Remote",
     description:
-      " Architected and built responsive UI elements in React, integrated with RESTful APIs to enhance the user experience. Responsible for setting up ReactJS for UI. Developed HTML views with HTML5, CSS3, JSON, and React JS.",
+      "Architected and built responsive UI elements in React, integrated with RESTful APIs to enhance the user experience. Responsible for setting up ReactJS for UI. Developed HTML views with HTML5, CSS3, JSON, and React JS.",
   },
   // {
   //     id: 3,
